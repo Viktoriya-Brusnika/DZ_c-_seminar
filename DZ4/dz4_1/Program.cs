@@ -11,10 +11,10 @@ int B = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"А в степен В равна {Expon(A, B)}");
 
-int Expon (int x, int y)
+int Expon(int x, int y)
 {
     int res = 1;
-    for (int i = 1; i < y+1; i++)
+    for (int i = 1; i < y + 1; i++)
     {
         res = res * x;
     }
