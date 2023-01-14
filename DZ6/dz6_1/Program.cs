@@ -19,14 +19,14 @@ void FillTwoArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++) array[i, j] = new Random().Next(0, 100);
     }
-  
+
 }
 
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0;j < array.GetLength(1);j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             Console.Write($"{array[i, j]} ");
         }
@@ -43,9 +43,9 @@ void MinValArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (array[i, j] < min) 
+            if (array[i, j] < min)
             {
-                min = array[i, j]; 
+                min = array[i, j];
                 index1 = i;
                 index2 = j;
             }
@@ -64,7 +64,7 @@ void MaxValArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (array[i, j] > max) 
+            if (array[i, j] > max)
             {
                 max = array[i, j];
                 index1 = i;
