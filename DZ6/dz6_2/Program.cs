@@ -20,12 +20,12 @@ else
         Console.WriteLine($"Периметр = {P}");
         double Area = Math.Sqrt(P / 2 * (P / 2 - a) * (P / 2 - b) * (P / 2 - c));
         Console.WriteLine($"Площадь = {Area}");
-        Console.WriteLine("{0:F3}", Math.Acos((a * a + b * b - c * c) / (2 * a * b)) * 180 / Math. PI);
-        Console.WriteLine("{0:F3}", Math.Acos((a * a + c * c - b * b) / (2 * a * c)) * 180 / Math. PI);
-        Console.WriteLine("{0:F3}", Math.Acos((b * b + c * c - a * a) / (2 * c * b)) * 180 / Math. PI);
+        Console.WriteLine($"Угол 1 = {Math.Acos((a * a + b * b - c * c) / (2 * a * b)) * 180 / Math. PI}");
+        Console.WriteLine($"Угол 2 = {Math.Acos((a * a + c * c - b * b) / (2 * a * c)) * 180 / Math. PI}");
+        Console.WriteLine($"Угол 3 = {Math.Acos((b * b + c * c - a * a) / (2 * c * b)) * 180 / Math. PI}");
         if ((Math.Pow(a, 2)) + Math.Pow(b, 2) == Math.Pow(c, 2) || (Math.Pow(b, 2)) + Math.Pow(c, 2) == Math.Pow(a, 2) || (Math.Pow(a, 2)) + Math.Pow(c, 2) == Math.Pow(b, 2)) Console.WriteLine("Треугольник прямоугольный");
-        if (a == b || b == c || a == b) Console.WriteLine("Треугольник равнобедренный");
         if ( a == b && b == c ) Console.WriteLine("Треугольник равносторонний");
+        else if (a == b || b == c || a == b) Console.WriteLine("Треугольник равнобедренный");
 
 
     }
