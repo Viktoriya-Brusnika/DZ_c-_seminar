@@ -51,7 +51,7 @@ string CheckNumb(int[,] array, int numb)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if ( array[i,j] == numb ) resoult = resoult + $"({i},{j}), ";
+            if (array[i, j] == numb) resoult = resoult + $"({i},{j}), ";
         }
     }
     return resoult;
